@@ -19,8 +19,8 @@ public class SpringBootAppAsWindowsServiceApplication {
 		return "Application is running...!!";
 	}
 	
-	//scheduler to check every 5 sec=5000milisec
-	@Scheduled(fixedDelay = 5000)
+	//scheduler to check every 50 sec=5000milisec
+	@Scheduled(fixedDelay = 50000)
 	public void print() {
 		System.out.println("Current time:-"+new Date());
 	}
